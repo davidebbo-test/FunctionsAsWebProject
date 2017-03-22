@@ -7,20 +7,21 @@ using System.Net.Http;
 using Microsoft.Azure.WebJobs.Host;
 using System.Threading.Tasks;
 
-namespace FunctionsLibraryProject
+namespace FunctionsPerfTest
 {
     public class HttpTriggerHighCPU
     {
-        public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+        public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
         {
-            int max = 100000000;
+            long max = 1000000000;
+            var start = DateTime.Now;
 
-            for (int i = 0; i < max; i++)
+            for (long i = 0; i < max; i++)
             {
                 // Just spin CPU to simulate CPU intensive activity
             }
 
-            return req.CreateResponse(HttpStatusCode.OK, $"Spinned {max} times");
+            return req.CreateResponse(HttpStatusCode.OK, $"Spinned CPU {max} times in {(DateTime.Now - start).TotalMilliseconds}ms");
         }
     }
 }

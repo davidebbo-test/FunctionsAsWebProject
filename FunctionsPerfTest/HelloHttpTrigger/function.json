@@ -1,7 +1,7 @@
 ﻿{
   "disabled": false,
-  "scriptFile": "..\\bin\\FunctionsLibraryProject.dll",
-  "entryPoint": "FunctionsLibraryProject.HttpTriggerHighCPU.Run",
+  "scriptFile": "..\\bin\\FunctionsPerfTest.dll",
+  "entryPoint": "FunctionsPerfTest.HelloHttpTrigger.Run",
   "bindings": [
     {
       "authLevel": "function",

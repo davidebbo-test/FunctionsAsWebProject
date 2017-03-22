@@ -7,7 +7,7 @@ using System.Net.Http;
 using Microsoft.Azure.WebJobs.Host;
 using System.Threading.Tasks;
 
-namespace FunctionsLibraryProject
+namespace FunctionsPerfTest
 {
     public class HelloHttpTrigger
     {

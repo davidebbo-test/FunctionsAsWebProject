@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{13D22BA7-F66F-48E6-A362-81780864339F}</ProjectGuid>
+    <ProjectGuid>{EE9B0B49-4636-4947-B2D5-9DA14DD49C44}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FunctionsLibraryProject</RootNamespace>
-    <AssemblyName>FunctionsLibraryProject</AssemblyName>
+    <RootNamespace>FunctionsPerfTest</RootNamespace>
+    <AssemblyName>FunctionsPerfTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />

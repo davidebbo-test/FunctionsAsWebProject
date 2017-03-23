@@ -111,6 +111,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HttpTriggerJSHighCPU\index.js" />
+    <Content Include="HttpTriggerJSHighCPU\function.json" />
     <None Include="packages.config" />
     <Content Include="HelloHttpTrigger\function.json" />
     <Content Include="HttpTriggerHighCPU\function.json" />

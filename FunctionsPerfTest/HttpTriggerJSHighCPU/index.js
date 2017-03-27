@@ -11,7 +11,11 @@ module.exports.test = function (context, req) {
     id = uuid();
   }
 
-  var duration = 5000;
+  var duration = 1000;
+
+  if (req.query.duration) {
+    duration = Number(req.query.duration);
+  }
 
   while (Date.now() < start + duration) {}
 

@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Net;
 using System.Net.Http;
-using Microsoft.Azure.WebJobs.Host;
 using System.Threading.Tasks;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Host;
 
 namespace FunctionsPerfTest
 {
     public class HelloHttpTrigger
     {
-        public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+        public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log, ExecutionContext context)
         {
             log.Info($"C# HTTP trigger function processed a request. RequestUri={req.RequestUri}");
+            log.Info($"Invocation ID: {context.InvocationId}");
 
             // parse query parameter
             string name = req.GetQueryNameValuePairs()
